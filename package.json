@@ -1,0 +1,30 @@
+{
+  "name": "Reader",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "epubjs-rn": "0.0.127",
+    "react": "16.8.3",
+    "react-native": "0.59.1",
+    "react-native-static-server": "^0.4.1",
+    "react-native-vector-icons": "^6.4.2",
+    "react-native-webview": "^5.4.1",
+    "react-native-zip-archive": "^4.0.0",
+    "rn-fetch-blob": "^0.10.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/runtime": "^7.4.0",
+    "babel-jest": "^24.5.0",
+    "jest": "^24.5.0",
+    "metro-react-native-babel-preset": "^0.53.1",
+    "react-test-renderer": "16.8.3"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

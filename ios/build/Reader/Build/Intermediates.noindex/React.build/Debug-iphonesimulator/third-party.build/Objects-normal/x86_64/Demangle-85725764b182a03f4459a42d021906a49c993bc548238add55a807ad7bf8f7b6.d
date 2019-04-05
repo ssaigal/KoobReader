@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.cpp \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Demangle.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/FBString.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CppAttributes.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Portability.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Config.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/CPortability.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Traits.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/Hash.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Utility.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/ApplyTuple.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/functional/Invoke.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/Preprocessor.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV1.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/hash/SpookyHashV2.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Bits.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/ConstexprMath.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Assume.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/portability/Builtins.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/lang/Exception.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/Malloc.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/memory/detail/MallocImpl.h \
+  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native/third-party/folly-2018.10.22.00/folly/detail/Demangle.h
