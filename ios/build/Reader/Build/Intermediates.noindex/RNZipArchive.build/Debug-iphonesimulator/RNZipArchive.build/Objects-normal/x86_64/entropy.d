@@ -1,2 +1,2 @@
 dependencies: \
-  /Users/cs.sfsu/Documents/demo/Reader/node_modules/react-native-zip-archive/ios/SSZipArchive/aes/entropy.c
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-zip-archive/ios/SSZipArchive/aes/entropy.c

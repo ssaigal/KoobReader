@@ -7,13 +7,19 @@
     "test": "jest"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "epubjs-rn": "0.0.127",
     "react": "16.8.3",
     "react-native": "0.59.1",
+    "react-native-document-picker": "^2.3.0",
+    "react-native-gesture-handler": "^1.1.0",
+    "react-native-image-slider-show": "^1.0.3",
+    "react-native-popup-dialog": "^0.18.2",
     "react-native-static-server": "^0.4.1",
     "react-native-vector-icons": "^6.4.2",
     "react-native-webview": "^5.4.1",
     "react-native-zip-archive": "^4.0.0",
+    "react-navigation": "^3.8.1",
     "rn-fetch-blob": "^0.10.15"
   },
   "devDependencies": {

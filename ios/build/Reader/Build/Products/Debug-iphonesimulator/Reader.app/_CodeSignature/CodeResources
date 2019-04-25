@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		KjFTYRQmFPVnhfNC1f9lLqrQYKc=
+		ReSYYA/YEC/dL/+k6A8w+6uIiqU=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -44,9 +44,70 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
+		<data>
+		jxrXqsw1+FjX86D1lFBUGyd51Rc=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
+		<data>
+		gSMYQBNTtZyyHfnXw/gZglAluoQ=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/Info.plist</key>
+		<data>
+		RH8D68n7FjOuuEMClbxo3pfx4es=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/LogArchiveCollector</key>
+		<data>
+		BBR2ivW0MZt4TmVXoRwNZFmOrzE=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/_CodeSignature/CodeResources</key>
+		<data>
+		Qdfg8G9JsFayP90/YspheFnGBfI=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/version.plist</key>
+		<data>
+		VXNKUksv4M1imAuw2oyofjVRuEk=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
+		<data>
+		0FcUSFcWmiyXA06cTUtSeQoun+A=
+		</data>
+		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
+		<data>
+		oKPV8WyaPW9QOkN3eyc6W8Fvy+A=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		QFsIaaDU8nVPGx54BOOFMP/OlHY=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		h4NDuJ2FygXbPr2AmyMVgRnSMS0=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		CJ/wYodSLa90KdhJLseNi8+9Wr4=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		oKPV8WyaPW9QOkN3eyc6W8Fvy+A=
+		</data>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<data>
+		1z/j0B0G9CxFwYHr0J4UnbkX8x4=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		okmmQ14cfgiVb++zLAnZGZrAnOk=
+		alnqyHsoMqwBWZu/TO5r+4rsOGA=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -67,6 +128,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/ReaderTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		hoxsiOCJ/7AXzJwbDTj/n0HKa6k=
+		</data>
+		<key>PlugIns/ReaderTests.xctest.dSYM/Contents/Resources/DWARF/ReaderTests</key>
+		<data>
+		vJbYGaLp9O6XaPcyX9N8tX7lWBs=
+		</data>
+		<key>PlugIns/ReaderTests.xctest/Info.plist</key>
+		<data>
+		nAAEAyjiAlIx1vBEqipkKY1P9ls=
+		</data>
+		<key>PlugIns/ReaderTests.xctest/ReaderTests</key>
+		<data>
+		BmFx5bTO6m6bT2NAgKmexZfQXKE=
+		</data>
+		<key>PlugIns/ReaderTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		82oycdJZbnW7sSSrp/8EG3jJUD4=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -94,11 +175,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KjFTYRQmFPVnhfNC1f9lLqrQYKc=
+			ReSYYA/YEC/dL/+k6A8w+6uIiqU=
 			</data>
 			<key>hash2</key>
 			<data>
-			StDxBgdXYVYrRApMTYyWHX3AAmRyvi2RJ85T5ZZSlxc=
+			UZm1m6BNKR+tg3Mg8zf3i8J4ovRn+9s1sU84+xiHBjU=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -189,6 +270,162 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			jxrXqsw1+FjX86D1lFBUGyd51Rc=
+			</data>
+			<key>hash2</key>
+			<data>
+			oaMfkuwVV4CKCL/fB9nMok7k6SiqLPITPZAraHlFsAU=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XCTAutomationSupport</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gSMYQBNTtZyyHfnXw/gZglAluoQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			38AYx8ZWfmI7wHkeLj0BNAtfXcB8ef4z9LchIkO5lYY=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			RH8D68n7FjOuuEMClbxo3pfx4es=
+			</data>
+			<key>hash2</key>
+			<data>
+			xFNPUEmq4GkIO2Gg/vqSTkouu+Mdg+/s1bZmAdLQpoc=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/LogArchiveCollector</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BBR2ivW0MZt4TmVXoRwNZFmOrzE=
+			</data>
+			<key>hash2</key>
+			<data>
+			IL3gWRn7lGc8pnbRPtU+gTk+7irOejOxiVh1plH3178=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Qdfg8G9JsFayP90/YspheFnGBfI=
+			</data>
+			<key>hash2</key>
+			<data>
+			23O3UricOJQ/G5lLUKYHpX9zUDrxFBuzIPHHKQhW1h4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/XPCServices/LogArchiveCollector.xpc/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			VXNKUksv4M1imAuw2oyofjVRuEk=
+			</data>
+			<key>hash2</key>
+			<data>
+			pNqKkQIuf6ZyLfd4UdGl7VIs93JvskmM5fc0GYgS2zw=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			0FcUSFcWmiyXA06cTUtSeQoun+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			/yKn17J5M+/sEs9D8vRBKr1JdiQmRkdMCib+HE7BJ/A=
+			</data>
+		</dict>
+		<key>Frameworks/XCTAutomationSupport.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oKPV8WyaPW9QOkN3eyc6W8Fvy+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZjakKFEdGb80YWyKGA7bT0Bii04uCOQRCSe4uVlsJrI=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			QFsIaaDU8nVPGx54BOOFMP/OlHY=
+			</data>
+			<key>hash2</key>
+			<data>
+			howQA2pQC/yaR3eYS1I/oq0iVP8kbc60zkoEZ7Pz0JQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			h4NDuJ2FygXbPr2AmyMVgRnSMS0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Afv6D0S3NWwZ4z9owj5tjdvE2ryeDkWNGmnA3jUojus=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			CJ/wYodSLa90KdhJLseNi8+9Wr4=
+			</data>
+			<key>hash2</key>
+			<data>
+			p3POsZHCfiHPHX4gCMhIRxss8urkmc627LoQwpD/oG4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oKPV8WyaPW9QOkN3eyc6W8Fvy+A=
+			</data>
+			<key>hash2</key>
+			<data>
+			ZjakKFEdGb80YWyKGA7bT0Bii04uCOQRCSe4uVlsJrI=
+			</data>
+		</dict>
+		<key>Frameworks/libXCTestBundleInject.dylib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			1z/j0B0G9CxFwYHr0J4UnbkX8x4=
+			</data>
+			<key>hash2</key>
+			<data>
+			Wq3Pqz+uC2S7E26uXoyLeAZqzxViGueEs2lTHGJtI2A=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -231,6 +468,61 @@
 			<key>hash2</key>
 			<data>
 			ua3cE7d8ZyDNSM0Y8PSoyuWJsbkQNjDCSd5gq3Lf1r4=
+			</data>
+		</dict>
+		<key>PlugIns/ReaderTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			hoxsiOCJ/7AXzJwbDTj/n0HKa6k=
+			</data>
+			<key>hash2</key>
+			<data>
+			dIUYzx8Hii+7cvvg20okER0e1l1Dj9hfwghKC4jHWA4=
+			</data>
+		</dict>
+		<key>PlugIns/ReaderTests.xctest.dSYM/Contents/Resources/DWARF/ReaderTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			vJbYGaLp9O6XaPcyX9N8tX7lWBs=
+			</data>
+			<key>hash2</key>
+			<data>
+			AnSwI2EKUZ3LEfo5ph/ntQ0YqXTxej9ojFchUwWgDgQ=
+			</data>
+		</dict>
+		<key>PlugIns/ReaderTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			nAAEAyjiAlIx1vBEqipkKY1P9ls=
+			</data>
+			<key>hash2</key>
+			<data>
+			7GHOzMSQmDdJex0Kny8OKxjYAH5eWSXb40S3kFeoPas=
+			</data>
+		</dict>
+		<key>PlugIns/ReaderTests.xctest/ReaderTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BmFx5bTO6m6bT2NAgKmexZfQXKE=
+			</data>
+			<key>hash2</key>
+			<data>
+			L5LSJu5zr/BzGliSc5bewTHExr/k8Xaph5TPXedPH2k=
+			</data>
+		</dict>
+		<key>PlugIns/ReaderTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			82oycdJZbnW7sSSrp/8EG3jJUD4=
+			</data>
+			<key>hash2</key>
+			<data>
+			y8dNKptXE/02iflr6W6wIrE/+/ZpgY7DfIP8TJ2Fkkw=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
