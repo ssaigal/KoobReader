@@ -2,10 +2,9 @@ import React from 'react';
 import { Text, View, Image, Linking} from 'react-native';
 import Card from './Card'
 import CardSection from './CardSection'
-import Button from './Button'
 
 const AlbumDetail = ({album}) =>{
-const { title, artist, thumbnail_image, image,url} = album;
+const {  image} = album;
 const {thumbnailContainerStyle,thumbnailStyle,headerContentStyle,headerTextStyle,imageStyle} = styles;
 
     return (
@@ -36,12 +35,12 @@ const styles = {
     thumbnailContainerStyle : {
         justifyContent : 'center',
         alignItems: 'center',
-        marginLeft:10,
-        marginRight:10
+        marginLeft:2,
+        marginRight:2
 
     },
     imageStyle : {
-        height : 200,
+        height : 150,
         flex : 1,
         width:100
     }

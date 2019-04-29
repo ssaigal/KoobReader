@@ -7,6 +7,7 @@ import {
   TouchableOpacity,
   Image,
 } from 'react-native';
+import FileViewer from 'react-native-file-viewer';
 import {
   DocumentPicker,
   DocumentPickerUtil,
@@ -26,14 +27,17 @@ class FilePicker extends React.Component {
     //Opening Document Picker
     DocumentPicker.show(
       {
-        filetype: [DocumentPickerUtil.epub()],
+        filetype: [DocumentPickerUtil.allFiles()],
         //All type of Files DocumentPickerUtil.allFiles()
         //Only PDF DocumentPickerUtil.pdf()
         //Audio DocumentPickerUtil.audio()
         //Plain Text DocumentPickerUtil.plainText()
       },
       (error, res) => {
-        this.setState({ fileUri: res.uri });
+          if(res) {
+            FileViewer.open(res.uri)
+            .then(() => {
+              this.setState({ fileUri: res.uri });
         this.setState({ fileType: res.type });
         this.setState({ fileName: res.fileName });
         this.setState({ fileSize: res.fileSize });
@@ -43,6 +47,11 @@ class FilePicker extends React.Component {
         console.log('Type : ' + res.type);
         console.log('File Name : ' + res.fileName);
         console.log('File Size : ' + res.fileSize);
+            })
+            .catch(_err => {
+              // error
+            });
+          }
       }
     );
   }
@@ -71,7 +80,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'black',
-    alignItems: 'center',
+    alignItems: 'flex-end',
     justifyContent: 'center',
   },
   ImageIconStyle: {

@@ -1,186 +1,64 @@
-import React, { Component } from 'react';
-import { View, Button, Text, StyleSheet, ScrollView} from 'react-native';
-import Dialog, {
-  DialogTitle,
-  DialogContent,
-  DialogFooter,
-  DialogButton
-} from 'react-native-popup-dialog';
-import axios from 'axios';
-import ImageSliderEx from './ImageSliderEx'
+/*Screen to view all the user*/
+import React from 'react';
+import { FlatList, Text, View, ScrollView } from 'react-native';
+import { openDatabase } from 'react-native-sqlite-storage';
+var db = openDatabase({ name: 'BooksDatabase.db' });
+import Card from './Card';
+import CardSection from './CardSection';
+ 
 
-
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  dialogContentView: {
-    // flex: 1,
-    paddingLeft: 18,
-    paddingRight: 18,
-    // backgroundColor: '#000',
-    // opacity: 0.4,
-    // alignItems: 'center',
-    // justifyContent: 'center',
-  },
-  navigationBar: {
-    borderBottomColor: '#b5b5b5',
-    borderBottomWidth: 0.5,
-    backgroundColor: '#ffffff',
-  },
-  navigationTitle: {
-    padding: 10,
-  },
-  navigationButton: {
-    padding: 10,
-  },
-  navigationLeftButton: {
-    paddingLeft: 20,
-    paddingRight: 40,
-  },
-  navigator: {
-    flex: 1,
-    // backgroundColor: '#000000',
-  },
-  customBackgroundDialog: {
-    opacity: 0.5,
-    backgroundColor: '#000',
-  },
-});
-
-class Learning extends Component {
-
+export default class ViewAllUser extends React.Component {
   constructor(props) {
     super(props);
+    this.state = {
+      FlatListItems: [],
+    };
+    db.transaction(tx => {
+      tx.executeSql('SELECT * FROM table_words', [], (tx, results) => {
+        var temp = [];
+        for (let i = 0; i < results.rows.length; ++i) {
+          temp.push(results.rows.item(i));
+        }
+        this.setState({
+          FlatListItems: temp,
+        });
+      });
+    });
   }
-  state = {
-    customBackgroundDialog: false,
-    defaultAnimationDialog: false,
-    scaleAnimationDialog: false,
-    slideAnimationDialog: false,
-    albums : [],
-    word : this.props.wordLookup,
-    isReady:false,
-    imageData : [],
-  };
-
-    componentWillMount(){
-      var url = 'https://api.pearson.com/v2/dictionaries/ldoce5/entries?headword=' + this.state.word;
-      var imageUrl = 'https://api.cognitive.microsoft.com/bing/v7.0/images/search?q=' + this.state.word;
-      axios
-      .get(url)
-      .then(response => {
-      this.setState({ albums: response.data.results, isReady:true});
-      return axios.get(imageUrl, { headers: { "Ocp-Apim-Subscription-Key" : "457dba72ab0347b28f31e688d4a332e5" } });
-      })
-      .then(response => {
-        this.setState({ imageData: response.data.queryExpansions, isReady: true});
-      }).catch(this.setState({isReady:false}));
-    }
-
-    renderAlbums(){
-      const {isReady} = this.state; 
-  
-               if(isReady){
-               const images = this.state.imageData.map((item) => item.thumbnail.thumbnailUrl)
-               console.log(images);
-      return(
-            <ScrollView>
-              <ImageSliderEx img = {images} />
-              <Text style = {{fontSize: 16,fontWeight: 'bold', padding: 10}}>{this.state.word}</Text>
-              <Text style = {{fontSize: 16, paddingLeft: 10}}>{this.state.albums[0].senses[0].definition} </Text>
-            </ScrollView>
-          );
-      }
-          return(
-            <View>
-              <Text>Not Found!</Text>
-            </View>
-          )
-  }
-
-  renderLookUp(){
+  ListViewItemSeparator = () => {
     return (
-    <View style={{ flex: 1 }}>
-    <Dialog
-      onDismiss={() => {
-        this.setState({ defaultAnimationDialog: false });
-      }}
-      width={0.9}
-      visible={this.state.defaultAnimationDialog}
-      rounded
-      actionsBordered
-      // actionContainerStyle={{
-      //   height: 100,
-      //   flexDirection: 'column',
-      // }}
-      dialogTitle={
-        <DialogTitle
-          title="Look-up: Definition and Image"
-          style={{
-            backgroundColor: '#F7F7F8',
-          }}
-          hasTitleBar={false}
-          align="left"
-        />
-      }
-      footer={
-        <DialogFooter>
-          <DialogButton
-            text="CANCEL"
-            bordered
-            onPress={() => {
-              this.setState({ defaultAnimationDialog: false });
-            }}
-            key="button-1"
-          />
-          <DialogButton
-            text="OK"
-            bordered
-            onPress={() => {
-              this.setState({ defaultAnimationDialog: false });
-            }}
-            key="button-2"
-          />
-        </DialogFooter>
-      }
-    >
-      <DialogContent
-        style={{
-          backgroundColor: '#F7F7F8',
-        }}
-      >
-        <View>
-      {this.renderAlbums()}
-    </View>
-      </DialogContent>
-    </Dialog>
-  </View>
-  );
-  }
+      <View style={{ height: 0.2, width: '100%', backgroundColor: '#808080' }} />
+    );
+  };
 
   render() {
     return (
-      <View style={{ flex: 0, justifyContent: 'flex-start', height:85 }}>
-        
-        <Button
-            title="Define"
-            onPress={() => {
-              this.setState({
-                defaultAnimationDialog: true,
-              });
-            }}
-          />
-        <View >
-        {this.renderLookUp()}
-        </View>
-        
-      </View>
+      <ScrollView>
+        <FlatList
+          data={this.state.FlatListItems}
+          ItemSeparatorComponent={this.ListViewItemSeparator}
+          keyExtractor={(item, index) => index.toString()}
+          renderItem={({ item }) => (
+            <View key={item.word_id} style={{ backgroundColor: 'white', padding: 20 }}>
+            <Card>
+            <CardSection>
+                <View style={{justifyContent: 'space-around',flexDirection : 'column'}}> 
+                <Text style={{fontSize:18,color:'white'}}>Word: {item.word_name}</Text>
+                <Text style={{fontSize:18,color:'white'}}>Definition: {item.meaning}</Text>
+                <Text style={{fontSize:18,color:'white'}}>Sentence: {item.sentence}</Text>
+                <Text style={{fontSize:18,color:'white'}}>Frquency: {item.frequency}</Text>
+                <Text style={{fontSize:18,color:'white'}}>Book: {item.book}</Text>
+                </View>
+            </CardSection>
+        </Card>
+              
+
+            </View>
+          )}
+        />
+      </ScrollView>
     );
   }
-}
 
-export default Learning;
+  
+}

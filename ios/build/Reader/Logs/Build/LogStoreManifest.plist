@@ -6,7 +6,7 @@
 	<integer>10</integer>
 	<key>logs</key>
 	<dict>
-		<key>D1C2C310-2CA9-4206-B441-3D60F7B68C80</key>
+		<key>806B85E9-D141-4B29-B46C-60CD6F881C0A</key>
 		<dict>
 			<key>className</key>
 			<string>IDECommandLineBuildLog</string>
@@ -15,7 +15,7 @@
 			<key>domainType</key>
 			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
 			<key>fileName</key>
-			<string>D1C2C310-2CA9-4206-B441-3D60F7B68C80.xcactivitylog</string>
+			<string>806B85E9-D141-4B29-B46C-60CD6F881C0A.xcactivitylog</string>
 			<key>primaryObservable</key>
 			<dict>
 				<key>highLevelStatus</key>
@@ -30,13 +30,45 @@
 			<key>signature</key>
 			<string>Building project Reader with scheme Reader and configuration Debug</string>
 			<key>timeStartedRecording</key>
-			<real>577876550.23523402</real>
+			<real>578228987.50784302</real>
 			<key>timeStoppedRecording</key>
-			<real>577876567.09981501</real>
+			<real>578229003.07845604</real>
 			<key>title</key>
 			<string>Building project Reader with scheme Reader and configuration Debug</string>
 			<key>uniqueIdentifier</key>
-			<string>D1C2C310-2CA9-4206-B441-3D60F7B68C80</string>
+			<string>806B85E9-D141-4B29-B46C-60CD6F881C0A</string>
+		</dict>
+		<key>FF01217D-0899-4829-999C-1583F8B10A96</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>FF01217D-0899-4829-999C-1583F8B10A96.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reader project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reader</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578228063.77885997</real>
+			<key>timeStoppedRecording</key>
+			<real>578228066.15141106</real>
+			<key>title</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>FF01217D-0899-4829-999C-1583F8B10A96</string>
 		</dict>
 	</dict>
 </dict>

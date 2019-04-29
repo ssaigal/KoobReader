@@ -3,7 +3,7 @@ import { createBottomTabNavigator , createAppContainer} from "react-navigation";
 
 import Home from '../views/Home';
 import First from '../views/First';
-import Second from '../views/Second';
+import Statistics from '../views/Statistics';
 import Learning from '../views/Learning'
 
 export const Tab = createAppContainer(createBottomTabNavigator({
@@ -14,7 +14,7 @@ export const Tab = createAppContainer(createBottomTabNavigator({
     screen: First,
   },
   Statistics: {
-    screen: Second,
+    screen: Statistics,
   },
   Learning:{
     screen : Learning,

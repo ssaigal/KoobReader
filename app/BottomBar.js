@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     ...Platform.select({
       ios: {
-        height: 64,
+        height: 34,
       },
       android: {
         height: 54,
@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row'
   },
   slider: {
-    height: 30,
+    height: 20,
     alignItems:'center',
     justifyContent:'center',
     flexDirection: 'row',

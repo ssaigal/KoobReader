@@ -7,7 +7,10 @@ const Header = (props) => {
 
     return (
     <View style={viewStyle}>
-      <Text style={textStyle}>{props.headerText}</Text>
+    <View style={{alignItems:"center"}}>
+        <Text style={textStyle}>{props.headerText}</Text>
+    </View>
+      
       <FilePicker />
     </View>
     );
@@ -19,7 +22,7 @@ const styles = {
         flexDirection:'row',
         backgroundColor : 'black',
         justifyContent : 'center',
-        alignItems : 'center',
+        alignItems:"center",
         height : 80,
         paddingTop : 30,
         shadowColor: 'white',
@@ -34,6 +37,7 @@ const styles = {
         fontSize : 30,
         fontFamily: 'Iowan Old Style',
         fontWeight:'600',
+        alignSelf:"center"
     }
 };
 

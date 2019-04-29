@@ -1,0 +1,26 @@
+dependencies: \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Brushes/RNSVGPainterBrush.m \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Brushes/RNSVGPainterBrush.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Brushes/RNSVGBrush.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGPercentageConverter.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGLength.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Brushes/RNSVGPainter.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RCTConvert+RNSVG.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTConvert.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTAnimationType.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTBorderStyle.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTDefines.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTLog.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTAssert.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTUtils.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTPointerEvents.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/React/RCTTextDecorationLineType.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/yoga/Yoga.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/yoga/YGEnums.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/yoga/YGMacros.h \
+  /Users/cs.sfsu/Documents/KoobReader/ios/build/Reader/Build/Products/Debug-iphonesimulator/include/yoga/YGValue.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGCGFCRule.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGVBMOS.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGUnits.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Utils/RNSVGPathParser.h \
+  /Users/cs.sfsu/Documents/KoobReader/node_modules/react-native-svg/ios/Brushes/RNSVGBrushType.h

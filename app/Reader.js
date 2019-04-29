@@ -10,10 +10,10 @@ import {
   StatusBar
 } from 'react-native';
 import { Epub, Streamer, Rendition} from "epubjs-rn";
-//import Button from './app'
+import BottomBar from '../app/BottomBar'
 import TopBar from '../app/TopBar'
 import Nav from '../app/Nav'
-import Learning from './views/Learning';
+import LookUp from './views/LookUp';
 
 class EpubReader extends Component {
   constructor(props) {
@@ -27,23 +27,17 @@ class EpubReader extends Component {
       title: "",
       toc: [],
       showBars: true,
+      showBottomBar:true,
       showNav: false,
-      sliderDisabled: true
+      sliderDisabled: false,
+      wordToLookup: "book",
+      showDefine : false,
     };
 
     this.streamer = new Streamer();
   }
 
-  renderContent(){
-    console.log('Render Content');
-                return( 
-                  <View>
-                  <Text>Define</Text>
-                </View>
- 
-                );
-     
-}
+  
 
   componentDidMount() {
     this.streamer.start()
@@ -66,6 +60,25 @@ class EpubReader extends Component {
     this.setState({ showBars: !this.state.showBars });
   }
 
+  toggleDefineButton(){
+    this.setState({showDefine : false});
+  }
+
+  renderDefine(){
+    if(this.state.showDefine){
+    return(
+      <View style={{zIndex:5}}>
+      <LookUp 
+      wordLookup={this.state.wordToLookup}
+      showButton={this.state.showDefine}
+      bookName={this.state.title} />
+      </View>
+        );
+    }
+        return(
+          <View></View>
+        )
+}
 
   render() {
     return (
@@ -73,6 +86,7 @@ class EpubReader extends Component {
         <StatusBar hidden={!this.state.showBars}
           translucent={true}
           animated={false} />
+            
         <Epub style={styles.reader}
               ref="epub"
               //src={"https://s3.amazonaws.com/epubjs/books/moby-dick.epub"}
@@ -92,7 +106,8 @@ class EpubReader extends Component {
                 console.log("Table of Contents", book.toc)
                 this.setState({
                   title : book.package.metadata.title,
-                  toc: book.navigation.toc
+                  toc: book.navigation.toc,
+                  book: book
                 });
               }}
               onPress={(cfi, position, rendition)=> {
@@ -110,9 +125,16 @@ class EpubReader extends Component {
               }}
               onSelected={(cfiRange, rendition) => {
                 console.log("selected", cfiRange)
-                // Add marker
-                {this.renderContent()};
-                rendition.highlight(cfiRange, {});
+                let word = "";
+                this.state.book.getRange(cfiRange).then(function(range) {
+                console.log(`Text: ${range.endContainer.data.substring(range.startOffset, range.endOffset)}`);
+                word = `${range.endContainer.data.substring(range.startOffset, range.endOffset)}`;                
+                 }).then( () => {
+                  this.setState({wordToLookup: word, showDefine : true});
+                 }).then(() => {
+                   this.renderDefine();
+                 });
+                //rendition.highlight(cfiRange, {});
               }}
               onMarkClicked={(cfiRange) => {
                 console.log("mark clicked", cfiRange)
@@ -122,7 +144,12 @@ class EpubReader extends Component {
                 console.log("EPUBJS-Webview", message);
               }}
             />
-            <Learning wordLookup="programming" />
+
+              <View>
+                {this.renderDefine()}
+              </View>
+            
+            
             <View
               style={[styles.bar, { top:0 }]}>
               <TopBar
@@ -139,6 +166,18 @@ class EpubReader extends Component {
                   }
                 }
                />
+            </View>
+            <View
+              style={[styles.bar, { bottom:0 }]}>
+              <BottomBar
+                disabled= {this.state.sliderDisabled}
+                value={this.state.visibleLocation ? this.state.visibleLocation.start.percentage : 0}
+                shown={this.state.showBottomBar}
+                onSlidingComplete={
+                  (value) => {
+                    this.setState({location: value.toFixed(6)})
+                  }
+                }/>
             </View>
             <View>
               <Nav ref={(nav) => this._nav = nav }
@@ -162,13 +201,12 @@ const styles = StyleSheet.create({
     flex: 1,
     alignSelf: 'stretch',
     backgroundColor: '#3F3F3C',
-    paddingLeft: 10
   },
   bar: {
-    position:"absolute",
+    //position:"absolute",
     left:0,
     right:0,
-    height:55
+    height:35
   }
 });
 

@@ -107,7 +107,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		alnqyHsoMqwBWZu/TO5r+4rsOGA=
+		vnQdrMEdTPf8oIrm/yT1myQ2q90=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -135,7 +135,7 @@
 		</data>
 		<key>PlugIns/ReaderTests.xctest.dSYM/Contents/Resources/DWARF/ReaderTests</key>
 		<data>
-		vJbYGaLp9O6XaPcyX9N8tX7lWBs=
+		VCxi+JeURnH1sb2Klnl9JifP9hk=
 		</data>
 		<key>PlugIns/ReaderTests.xctest/Info.plist</key>
 		<data>
@@ -143,7 +143,7 @@
 		</data>
 		<key>PlugIns/ReaderTests.xctest/ReaderTests</key>
 		<data>
-		BmFx5bTO6m6bT2NAgKmexZfQXKE=
+		N99AXol/IGQK6NObym4ihXuHu5A=
 		</data>
 		<key>PlugIns/ReaderTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
@@ -485,11 +485,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vJbYGaLp9O6XaPcyX9N8tX7lWBs=
+			VCxi+JeURnH1sb2Klnl9JifP9hk=
 			</data>
 			<key>hash2</key>
 			<data>
-			AnSwI2EKUZ3LEfo5ph/ntQ0YqXTxej9ojFchUwWgDgQ=
+			L4eFCQ74Yo7s4WyERZx+j8OA8T7V8c11KFgsENhmW7s=
 			</data>
 		</dict>
 		<key>PlugIns/ReaderTests.xctest/Info.plist</key>
@@ -507,11 +507,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			BmFx5bTO6m6bT2NAgKmexZfQXKE=
+			N99AXol/IGQK6NObym4ihXuHu5A=
 			</data>
 			<key>hash2</key>
 			<data>
-			L5LSJu5zr/BzGliSc5bewTHExr/k8Xaph5TPXedPH2k=
+			mozzxDkX+NzegCROmFLbeTjg5QgcopLezWxKx3iOv3c=
 			</data>
 		</dict>
 		<key>PlugIns/ReaderTests.xctest/_CodeSignature/CodeResources</key>

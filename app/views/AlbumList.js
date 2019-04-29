@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import { ScrollView } from 'react-native';
+import { ScrollView, View,StyleSheet } from 'react-native';
 import axios from 'axios';
 import AlbumDetail from './AlbumDetail';
 
@@ -14,20 +14,35 @@ class AlbumList extends Component{
         .then(response => this.setState({albums : response.data}))
     }
 
+    
+
 renderAlbums(){
     return this.state.albums.map(album => 
-            <AlbumDetail key={album.title} album={album}/>
+            <AlbumDetail style={{width: '50%'}} key={album.title} album={album}/>
         );
 }
 
 render(){
     return (
-        <ScrollView style={{flex:1, flexDirection:'row'}}>
-          {this.renderAlbums()}
+        <ScrollView >
+        <View style={styles.container}>
+        {this.renderAlbums()}
+        </View>
         </ScrollView>
     );
     }
-}
+};
+
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      flexDirection: 'row',
+      flexWrap: 'wrap',
+      alignItems: 'flex-start' ,
+    },
+});
+
+
 
 
 export default AlbumList;
