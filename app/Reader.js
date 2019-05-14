@@ -3,12 +3,14 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  Button,
+  TouchableOpacity,
   View,
   Animated,
   Modal,
   StatusBar
 } from 'react-native';
+import RNFS from 'react-native-fs';
+import Icon from 'react-native-vector-icons/AntDesign';
 import { Epub, Streamer, Rendition} from "epubjs-rn";
 import BottomBar from '../app/BottomBar'
 import TopBar from '../app/TopBar'
@@ -18,10 +20,11 @@ import LookUp from './views/LookUp';
 class EpubReader extends Component {
   constructor(props) {
     super(props);
+    const bookPath = this.props.navigation.getParam('bookPath','file:///Users/cs.sfsu/Downloads/turgenev-home-of-the-gentry.epub');
     this.state = {
       flow: "paginated", // paginated || scrolled-continuous
       location: 6,
-      url: "https://s3.amazonaws.com/epubjs/books/moby-dick.epub",
+      url: bookPath,
       src: "",
       origin: "",
       title: "",
@@ -36,21 +39,52 @@ class EpubReader extends Component {
 
     this.streamer = new Streamer();
   }
-
+  
   
 
+
   componentDidMount() {
-    this.streamer.start()
+    this.root = this.props.root || "www/";
+    let filename = this.state.url.split('/').pop();
+    this.file = filename;
+    let path = RNFS.DocumentDirectoryPath + "/" + this.root;
+    let dest = path + this.file;
+    console.log(dest);
+    RNFS.mkdir(path, { NSURLIsExcludedFromBackupKey: true });
+
+    let added;
+    if (this.state.url.indexOf("file://") > -1) {
+      // Copy file in release
+      added =  RNFS.exists(dest).then((e) => {
+        if (!e) {
+          return RNFS.copyFile(this.state.url, dest);
+        }
+      });
+    } else {
+      // Download for development
+      let download = RNFS.downloadFile({
+        fromUrl: this.state.url,
+        toFile: dest
+      });
+      added = download.promise;
+    }
+      
+      added.then(()=> {
+      this.streamer.start()
       .then((origin) => {
         this.setState({origin})
-        return this.streamer.get(this.state.url);
+        console.log(this.state.origin+"/"+filename+"/");
+        return this.streamer.get(this.state.origin+"/"+filename+"/");
       })
       .then((src) => {
         return this.setState({src});
-      });
-
-    setTimeout(() => this.toggleBars(), 1000);
+      })
+    });
+    
+    
+    //setTimeout(() => this.toggleBars(), 1000);
   }
+
 
   componentWillUnmount() {
     this.streamer.kill();
@@ -78,6 +112,11 @@ class EpubReader extends Component {
         return(
           <View></View>
         )
+}
+_closeModal() {
+  setState({
+      modalVisible: false
+  });
 }
 
   render() {
@@ -151,7 +190,7 @@ class EpubReader extends Component {
             
             
             <View
-              style={[styles.bar, { top:0 }]}>
+              style={[styles.topBar, { top:0 }]}>
               <TopBar
                 title={this.state.title}
                 shown={this.state.showBars}
@@ -167,6 +206,10 @@ class EpubReader extends Component {
                 }
                />
             </View>
+            <TouchableOpacity style={styles.backButton}
+              onPress={() => this.props.navigation.goBack(null)}>
+              <Icon name="shrink" size={30} />
+            </TouchableOpacity>
             <View
               style={[styles.bar, { bottom:0 }]}>
               <BottomBar
@@ -207,6 +250,22 @@ const styles = StyleSheet.create({
     left:0,
     right:0,
     height:35
+  },
+  topBar: {
+    position:"absolute",
+    left:0,
+    right:0,
+    height:50
+  },
+  backButton: {
+    width: 100,
+    height: 100,
+    position: 'absolute',
+    bottom: 0.05,
+    right: 0.05,
+    //paddingBottom:10,
+    padding: 0,
+    //flexDirection: 'row',
   }
 });
 

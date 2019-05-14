@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>806B85E9-D141-4B29-B46C-60CD6F881C0A</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>806B85E9-D141-4B29-B46C-60CD6F881C0A.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reader project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reader</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578228987.50784302</real>
+			<key>timeStoppedRecording</key>
+			<real>578229003.07845604</real>
+			<key>title</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>806B85E9-D141-4B29-B46C-60CD6F881C0A</string>
+		</dict>
+		<key>9F4B86DB-5733-4CF6-9F3B-BD19975ACA1E</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>9F4B86DB-5733-4CF6-9F3B-BD19975ACA1E.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>Reader project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>Reader</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>578249303.53693104</real>
+			<key>timeStoppedRecording</key>
+			<real>578249320.41975701</real>
+			<key>title</key>
+			<string>Building project Reader with scheme Reader and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>9F4B86DB-5733-4CF6-9F3B-BD19975ACA1E</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

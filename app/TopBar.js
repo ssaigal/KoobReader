@@ -34,7 +34,8 @@ const styles = StyleSheet.create({
     backgroundColor: "#cdcdcd",
     ...Platform.select({
       ios: {
-        paddingTop: 20,
+        paddingTop: 24,
+        marginBottom:10,
       },
       android: {
         paddingTop: 24,
@@ -43,7 +44,7 @@ const styles = StyleSheet.create({
     top: 0,
     ...Platform.select({
       ios: {
-        height: 44,
+        height: 64,
       },
       android: {
         height: 74,

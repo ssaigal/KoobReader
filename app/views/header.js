@@ -20,7 +20,7 @@ const Header = (props) => {
 const styles = {
     viewStyle :{
         flexDirection:'row',
-        backgroundColor : 'black',
+        backgroundColor : '#2a343d',
         justifyContent : 'center',
         alignItems:"center",
         height : 80,

@@ -1,13 +1,12 @@
-/*Screen to view all the user*/
-import React from 'react';
+import React, { Component } from 'react';
 import { FlatList, Text, View, ScrollView } from 'react-native';
 import { openDatabase } from 'react-native-sqlite-storage';
-var db = openDatabase({ name: 'BooksDatabase.db' });
+var db = openDatabase({ name: 'KoobDatabase.db' });
 import Card from './Card';
 import CardSection from './CardSection';
  
 
-export default class ViewAllUser extends React.Component {
+class Learning extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -43,7 +42,7 @@ export default class ViewAllUser extends React.Component {
             <Card>
             <CardSection>
                 <View style={{justifyContent: 'space-around',flexDirection : 'column'}}> 
-                <Text style={{fontSize:18,color:'white'}}>Word: {item.word_name}</Text>
+                <Text style={{fontSize:18,color:'white',}}>Word: {item.word_name}</Text>
                 <Text style={{fontSize:18,color:'white'}}>Definition: {item.meaning}</Text>
                 <Text style={{fontSize:18,color:'white'}}>Sentence: {item.sentence}</Text>
                 <Text style={{fontSize:18,color:'white'}}>Frquency: {item.frequency}</Text>
@@ -62,3 +61,4 @@ export default class ViewAllUser extends React.Component {
 
   
 }
+export default  Learning;

@@ -15,7 +15,7 @@ class ImageSliderEx extends Component {
           url: props.img[1],
         }, {
           url: props.img[2],
-        },
+        }
       ],
     };
   }

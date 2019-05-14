@@ -7,7 +7,7 @@ import Dialog, {
   DialogButton
 } from 'react-native-popup-dialog';
 import { openDatabase } from 'react-native-sqlite-storage';
-var db = openDatabase({ name: 'BooksDatabase.db' });
+var db = openDatabase({ name: 'KoobDatabase.db' });
 import axios from 'axios';
 import ImageSliderEx from './ImageSliderEx';
 import Button from './Button'
@@ -95,6 +95,20 @@ register_user = () => {
               [word_name, meaning, sentence, frequency, book],
               (tx, results) => {
                 console.log('Results', results.rowsAffected);
+                if (results.rowsAffected > 0) {
+                    Alert.alert(
+                      'Success',
+                      'You are Registered Successfully',
+                      [
+                        {
+                          text: 'Ok',
+                          onPress: () =>
+                            that.props.navigation.navigate('Learning'),
+                        },
+                      ],
+                      { cancelable: false }
+                    );
+                  } 
               }
             );
           });
@@ -119,7 +133,7 @@ register_user = () => {
       axios
       .get(url)
       .then(response => {
-      this.setState({ meaning: response.data.results[0].senses[0].definition, isReady:true});
+      this.setState({ meaning: response.data.results[0].senses[0].definition});
       return axios.get(imageUrl, { headers: { "Ocp-Apim-Subscription-Key" : "457dba72ab0347b28f31e688d4a332e5" } });
       })
       .then(response => {
@@ -134,7 +148,7 @@ register_user = () => {
       var imageCount = Object.keys(this.state.imageData).length;
       //console.log(parseInt(dicionaryCount), parseInt(imageCount));
                if( parseInt(imageCount) > 0 && (isReady === true )){
-               const images = this.state.imageData.map((item) => item.thumbnail.thumbnailUrl)
+               const images = this.state.imageData.map((item) => item.thumbnail.thumbnailUrl);
                console.log(images);
                
       return(

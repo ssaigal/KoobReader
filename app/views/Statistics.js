@@ -8,7 +8,7 @@ import email from 'react-native-email'
 class Statistics extends Component {
 
   handleEmail = () => {
-    const to = ['tiaan@email.com'] // string or array of email addresses
+    const to = ['saigal@mail.sfsu.edu'] // string or array of email addresses
     email(to, {
         // Optional additional arguments
         subject: 'Book Statistics Report',

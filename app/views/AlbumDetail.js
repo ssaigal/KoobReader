@@ -1,20 +1,29 @@
 import React from 'react';
-import { Text, View, Image, Linking} from 'react-native';
+import { Text, View, Image, TouchableOpacity} from 'react-native';
 import Card from './Card'
 import CardSection from './CardSection'
 
 const AlbumDetail = ({album}) =>{
-const {  image} = album;
+const   imgpath = album.imgpath;
+const book_name = album.book_name;
+const url = album.link;
+//console.log("URL in SQLITE ",url)
 const {thumbnailContainerStyle,thumbnailStyle,headerContentStyle,headerTextStyle,imageStyle} = styles;
 
     return (
+        <TouchableOpacity
+         style={styles.button}
+         onPress={() => navigate('First', {name: 'Jane'})}
+       >
         <Card>
             <CardSection>
                 <View style={thumbnailContainerStyle}> 
-                <Image style={imageStyle} source= {{uri: image}}/>
+                <Image style={imageStyle} source= {{uri: imgpath}}/>
+                <Text>{book_name}</Text>
                 </View>
             </CardSection>
         </Card>
+        </TouchableOpacity>
     );
 };
 

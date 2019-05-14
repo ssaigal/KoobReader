@@ -119,7 +119,7 @@ class Nav extends Component<{}> {
 const styles = StyleSheet.create({
   navBar: {
     backgroundColor: '#f7f7f7',
-    height: 40,
+    height: 60,
     flex: 1,
     flexDirection: 'row',
     borderBottomColor: "#b2b2b2",
@@ -142,8 +142,8 @@ const styles = StyleSheet.create({
   },
   navTitle: {
     fontSize: 16,
-    textAlign: 'center',
-    marginTop: 10,
+    textAlign: 'justify',
+    marginTop: 25,
     flex: 20,
     marginRight: -40,
     fontWeight: "bold",
@@ -208,6 +208,7 @@ const styles = StyleSheet.create({
     position: 'absolute',
     top: 20,
     left: 20,
+    paddingTop:10,
     padding: 0,
     flexDirection: 'row',
   },
